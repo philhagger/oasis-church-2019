@@ -1,0 +1,56 @@
+@import '../../App.scss';
+
+.header {
+  height: 95vh; //vh = viewport height 0-100
+  // background-image: linear-gradient(to right bottom, rgba($lightGreen, 0.8), rgba($darkGreen, 0.8)), url('../img/hero.jpg');
+  background-image: linear-gradient(to right bottom, rgba($oasisGreen, 0.8), rgba($oasisBlue, 0.7)), url('./hereford_hero_3.jpg');
+  background-size: cover;
+  background-position: top;
+  // polygon(top left, top right, bottom right, bottom left)
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  position: relative;
+}
+
+.header__logobox {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 35px;
+}
+
+.header__textbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__title {
+  color: $white;
+  text-transform: uppercase;
+  backface-visibility: hidden; //apparently this fixes an animation shake
+}
+
+.header__title--primary {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 30px;
+  animation: moveInLeft 1.5s ease-out;
+  // animation-name: moveInLeft;
+  // animation-duration: 1s;
+  // animation-timing-function: ease-out;
+  // animation-delay: 3s;
+  // animation-iteration-count: 3;
+}
+
+.header__title--secondary {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 28.4px;
+  animation: moveInRight 1.5s ease-out;
+}

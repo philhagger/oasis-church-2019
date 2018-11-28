@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 // Styling
-import 'normalize-css';
 import './App.scss';
 
 // Components

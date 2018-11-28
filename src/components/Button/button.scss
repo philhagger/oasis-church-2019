@@ -1,0 +1,53 @@
+@import '../../App.scss';
+
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  outline: none;
+  border-radius: 100px;
+  border: 2px solid darken($white, 10%);
+  cursor: pointer;
+  transition: all 0.15s;
+  position: relative;
+}
+
+// the hover and active combined make the button look like it is physically pushed
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(black, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(black, 0.2);
+}
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  border: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn--white {
+  background-color: $white;
+  color: $grey;
+}
+
+.btn--white::after {
+  background-color: $white;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.2) scaleY(1.4);
+  opacity: 0;
+}

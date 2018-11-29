@@ -1,0 +1,10 @@
+@import "../../App";
+
+.scrollTop {
+  border: 3px solid $oasisBlue;
+  position: fixed;
+  top: 85vh;
+  right: -3px;
+  padding: 10px;
+  cursor: pointer;
+}

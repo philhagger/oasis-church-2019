@@ -24,3 +24,6 @@ class App extends Component {
 }
 
 export default App;
+
+//TODO Implement proper scrolling within the application. Such as the ability to scroll to the previous or next page.
+//FIXME something needs fixing

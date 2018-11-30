@@ -1,20 +1,36 @@
 @import './styles/colors';
 @import './styles/animations';
+@import './styles/base';
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 
+/* BEM - Block Element Modifier
+*  Naming convention for CSS
+*  .block
+*  .block__element  Element that has no meaning on its own
+*  .block__element--modifier  A different version of a block or an element eg btn--round btn--danger
+*/
+
+
 // Apparently these replace the need for normalize-css so it isn't needed
-* {
+*,
+*::after,
+*::before{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html{
+  //font-size: 10px; // this is bad practice to set the font-size in px as it overrides browser accessibility
+  font-size: 62.5% //default browser font-size is 16px
 }
 
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.7;
   color: $grey;
-  // padding: 30px;
+  box-sizing: border-box; //includes padding and border in total height/width
+  //padding: 3rem;
 }

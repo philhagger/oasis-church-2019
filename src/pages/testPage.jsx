@@ -2,7 +2,8 @@ import React from 'react';
 
 
 const style = {
-    height: '100vh'
+    height: '100vh',
+    'font-size': '1.6rem'
 };
 
 class TestPage extends React.Component{

@@ -15,15 +15,11 @@ class App extends Component {
     return (
       <div>
         <Header title="Oasis Church" subtitle="Faith, Hope and Love" />
-        <ScrollTop/>
+        {/*<ScrollTop/>*/}
         <TestPage page={"page1"}/>
-        <TestPage page={"page2"}/>
       </div>
     );
   }
 }
 
 export default App;
-
-//TODO Implement proper scrolling within the application. Such as the ability to scroll to the previous or next page.
-//FIXME something needs fixing

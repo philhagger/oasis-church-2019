@@ -8,15 +8,15 @@ import {WhiteButton} from '../Button/Button';
 
 const Header = ({title, subtitle}) => (
     <header className="header" id={"header"}>
-        <div className="header__logobox">
+        <div className="header__logo-box">
             <a href="/">
-                <img src={logo} alt="Logo" className="logo"/>
+                <img src={logo} alt="Logo" className="header__logo"/>
             </a>
         </div>
-        <div className="header__textbox">
-            <h1 className="header__title">
-                <span className="header__title--primary">{title}</span>
-                <span className="header__title--secondary">{subtitle}</span>
+        <div className="header__text-box">
+            <h1 className="heading-primary">
+                <span className="heading-primary--main">{title}</span>
+                <span className="heading-primary--sub">{subtitle}</span>
             </h1>
             <WhiteButton className="btn--animated" onClick={() => scrollToElement("#page1", {ease: 'out-cube', duration: 800})}>Discover more</WhiteButton>
         </div>

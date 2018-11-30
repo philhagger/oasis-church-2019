@@ -3,25 +3,26 @@
 .btn {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
   outline: none;
-  border-radius: 100px;
-  border: 2px solid darken($white, 10%);
+  border-radius: 10rem;
+  border: 0;
   cursor: pointer;
-  transition: all 0.15s;
+  transition: all .15s;
+  font-size: 1.6rem;
   position: relative;
 }
 
 // the hover and active combined make the button look like it is physically pushed
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(black, 0.2);
+  box-shadow: 0 1rem 2rem rgba(black, 0.2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(black, 0.2);
+  box-shadow: 0 .5rem 1rem rgba(black, 0.2);
 }
 
 .btn::after {
@@ -29,8 +30,7 @@
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
-  border: 2px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;

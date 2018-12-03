@@ -1,3 +1,36 @@
 $large: 2.4rem;
 $medium: 1.6rem;
 $small: 1rem;
+
+/* BEM - Block Element Modifier
+*  Naming convention for CSS
+*  .block
+*  .block__element  Element that has no meaning on its own
+*  .block__element--modifier  A different version of a block or an element eg btn--round btn--danger
+*/
+
+// sass allows users to nest css but this is bad practice and makes searching for elements tricky
+
+// Apparently these replace the need for normalize-css so it isn't needed
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  //font-size: 10px; // this is bad practice to set the font-size in px as it overrides browser accessibility
+  font-size: 62.5% //default browser font-size is 16px
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $grey;
+  box-sizing: border-box; //includes padding and border in total height/width
+  //padding: 3rem;
+}
+

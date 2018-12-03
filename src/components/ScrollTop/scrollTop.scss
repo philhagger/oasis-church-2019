@@ -1,10 +1,13 @@
 @import "../../App";
 
 .scrollTop {
-  border: 3px solid $oasisBlue;
+  //border: 3px solid $oasisGreen;
+  background-image: linear-gradient(to right bottom, $oasisGreen, $oasisBlue);
+  color: $white;
+  border-radius: 100px;
   position: fixed;
-  top: 85vh;
-  right: -3px;
-  padding: 10px;
+  top: 89vh;
+  right: 1rem;
+  padding: 1rem;
   cursor: pointer;
 }

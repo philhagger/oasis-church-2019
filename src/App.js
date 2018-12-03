@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div>
         <Header title="Oasis Church" subtitle="Faith, Hope and Love" />
-        {/*<ScrollTop/>*/}
+        <ScrollTop/>
         <TestPage page={"page1"}/>
       </div>
     );

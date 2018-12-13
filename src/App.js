@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header title="Oasis Church" subtitle="Faith, Hope and Love" />
+        <Header title="Oasis Church" subtitle="Faith, Love and Hope" />
         <ScrollTop />
         <InfoBlockPage />
         {/*<GridPage page={'page1'} />*/}

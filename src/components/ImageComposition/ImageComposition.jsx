@@ -1,12 +1,16 @@
 import React from 'react';
 
+import img1 from './IMG_2132.JPG';
+import img2 from './IMG_2326.JPG';
+import img3 from './IMG_1433.JPG';
+
 import './ImageComposition.scss';
 
 const ImageComposition = () => (
   <div className="composition">
-    <img src="../../img/nat-1-large.jpg" className="composition__photo composition__photo--p1" />
-    <img src="../../img/nat-2-large.jpg" className="composition__photo composition__photo--p2" />
-    <img src="../../img/nat-3-large.jpg" className="composition__photo composition__photo--p3" />
+    <img src={img1} className="composition__photo composition__photo--p1" alt="img1" />
+    <img src={img2} className="composition__photo composition__photo--p2" alt="img2" />
+    <img src={img3} className="composition__photo composition__photo--p3" alt="img3" />
   </div>
 );
 

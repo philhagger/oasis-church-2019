@@ -1,8 +1,8 @@
 import React from 'react';
 
-import img1 from './IMG_2132.JPG';
-import img2 from './IMG_2326.JPG';
-import img3 from './IMG_1433.JPG';
+import img1 from '../../img/people/IMG_2132.JPG';
+import img2 from '../../img/people/IMG_2326.JPG';
+import img3 from '../../img/people/IMG_1433.JPG';
 
 import './ImageComposition.scss';
 

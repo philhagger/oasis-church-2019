@@ -1,7 +1,7 @@
 import React from 'react';
 import scrollToElement from 'scroll-to-element';
 
-import logo from './logo-white.png';
+import logo from '../../img/logo/logo-white.png';
 import './header.scss';
 
 import { WhiteButton } from '../Button/Button';
@@ -18,7 +18,7 @@ const Header = ({ title, subtitle }) => (
         <span className="heading-primary--main">{title}</span>
         <span className="heading-primary--sub">{subtitle}</span>
       </h1>
-      <WhiteButton className="btn--animated" onClick={() => scrollToElement('#page1', { ease: 'out-cube', duration: 800 })}>
+      <WhiteButton className="btn--animated" onClick={() => scrollToElement('#info', { ease: 'out-cube', duration: 800 })}>
         Discover more
       </WhiteButton>
     </div>

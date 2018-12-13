@@ -8,22 +8,23 @@
   white-space: nowrap;
 }
 
-.heading-secondary {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  background-image: linear-gradient(to right, $oasis-green, $oasis-blue);
-  display: inline-block;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: all 0.2s;
-  letter-spacing: 2px;
+// .heading-secondary {
+//   font-size: 3.5rem;
+//   text-transform: uppercase;
+//   font-weight: 700;
+//   background-image: linear-gradient(to right, $oasis-green, $oasis-blue);
+//   display: inline-block;
+//   -webkit-background-clip: text;
+//   color: transparent;
+//   transition: all 0.2s;
+//   letter-spacing: 2px;
 
-  &:hover {
-    transform: skewY(-7.5deg) skewX(15deg) scale(1.1);
-    text-shadow: 5rem 1rem 2rem rgba(black, 0.2);
-  }
-}
+//   &:hover {
+//     transform: scale(1.05);
+//     // transform: skewY(-7.5deg) skewX(15deg) scale(1.1);
+//     text-shadow: 0 1rem 2rem rgba(black, 0.2);
+//   }
+// }
 
 .heading-tertiary {
   font-size: $default-font-size;

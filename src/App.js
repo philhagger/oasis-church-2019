@@ -8,9 +8,8 @@ import Header from './components/Header/Header';
 import ScrollTop from './components/ScrollTop/ScrollTop';
 
 // Pages
-// import GridPage from './pages/GridPage';
-import InfoBlockPage from './pages/InfoBlock/InfoBlockPage';
-import WhatsOnPage from './pages/WhatsOn/WhatsOnPage';
+import InfoBlockPage from './pages/InfoBlockPage/InfoBlockPage';
+import WhatsOnPage from './pages/WhatsOnPage/WhatsOnPage';
 
 class App extends Component {
   render() {

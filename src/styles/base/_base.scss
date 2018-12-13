@@ -1,7 +1,3 @@
-$large: 2.4rem;
-$medium: 1.6rem;
-$small: 1rem;
-
 /* BEM - Block Element Modifier
 *  Naming convention for CSS
 *  .block
@@ -14,15 +10,15 @@ $small: 1rem;
 // Apparently these replace the need for normalize-css so it isn't needed
 *,
 *::after,
-*::before{
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
-html{
+html {
   //font-size: 10px; // this is bad practice to set the font-size in px as it overrides browser accessibility
-  font-size: 62.5% //default browser font-size is 16px
+  font-size: 62.5%; //default browser font-size is 16px
 }
 
 body {
@@ -31,6 +27,5 @@ body {
   line-height: 1.7;
   color: $grey;
   box-sizing: border-box; //includes padding and border in total height/width
-  //padding: 3rem;
+  // padding: 3rem;
 }
-

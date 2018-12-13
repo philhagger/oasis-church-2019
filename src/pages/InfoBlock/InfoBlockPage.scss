@@ -1,0 +1,37 @@
+@import '../../App.scss';
+.section-about {
+  background-color: $light-grey-1;
+  padding: 25rem 0;
+  height: 100vh;
+  margin-top: -20vh;
+}
+
+.heading-secondary:hover {
+  transform: skewY(-7.5deg) skewX(15deg) scale(1.1);
+  text-shadow: 5rem 1rem 2rem rgba(black, 0.2);
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    color: $oasis-green;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $oasis-green;
+    padding: 3px;
+    font-size: $default-font-size;
+  }
+
+  &:hover {
+    background-color: $oasis-green;
+    color: $white;
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+    transform: translateY(-2px);
+    transition: all 0.2s;
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+    transform: translateY(0);
+  }
+}

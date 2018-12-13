@@ -9,8 +9,8 @@
   border-radius: 10rem;
   border: 0;
   cursor: pointer;
-  transition: all .15s;
-  font-size: 1.6rem;
+  transition: all 0.15s;
+  font-size: $default-font-size;
   position: relative;
 }
 
@@ -22,7 +22,7 @@
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 .5rem 1rem rgba(black, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
 }
 
 .btn::after {

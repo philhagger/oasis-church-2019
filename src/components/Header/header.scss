@@ -1,8 +1,8 @@
 @import '../../App.scss';
 
 .header {
-   //height: 95vh; //vh = viewport height 0-100
-  height: 100vh; //vh = viewport height 0-100
+  height: 95vh; //vh = viewport height 0-100
+  // height: 100vh; //vh = viewport height 0-100
   // background-image: linear-gradient(to right bottom, rgba($lightGreen, 0.8), rgba($darkGreen, 0.8)), url('../img/hero.jpg');
   background-image: linear-gradient(to right bottom, rgba($oasisGreen, 0.8), rgba($oasisBlue, 0.7)), url('./hereford_hero_3.jpg');
   background-size: cover;
@@ -31,13 +31,13 @@
   transform: translate(-50%, -50%);
 }
 
-.heading-primary {
-  backface-visibility: hidden; //apparently this fixes an animation shake
-  color: $white;
-  margin-bottom: 6rem;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
+// .heading-primary {
+//   backface-visibility: hidden; //apparently this fixes an animation shake
+//   color: $white;
+//   margin-bottom: 6rem;
+//   text-transform: uppercase;
+//   white-space: nowrap;
+// }
 
 .heading-primary--main {
   animation: moveInLeft 1.5s ease-out;

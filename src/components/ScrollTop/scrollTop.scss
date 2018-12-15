@@ -1,8 +1,8 @@
-@import "../../App";
+@import '../../App';
 
 .scrollTop {
   //border: 3px solid $oasisGreen;
-  background-image: linear-gradient(to right bottom, $oasisGreen, $oasisBlue);
+  background-image: linear-gradient(to right bottom, $oasis-green, $oasis-blue);
   color: $white;
   border-radius: 100px;
   position: fixed;

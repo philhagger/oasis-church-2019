@@ -5,7 +5,8 @@
 
   &__photo {
     width: 55%;
-    box-shadow: 0 1.5rem 4rem rgba($black, 0.4);
+    // box-shadow: 0 1.5rem 4rem rgba($black, 0.4);
+    box-shadow: $shadow;
     border-radius: 2px;
     position: absolute;
     z-index: 10;
@@ -30,7 +31,8 @@
     &:hover {
       //   outline: 1.5rem solid $oasis-green;
       transform: scale(1.15) translateY(-0.5rem);
-      box-shadow: 0 2.5rem 4rem rgba($black, 0.5);
+      // box-shadow: 0 2.5rem 4rem rgba($black, 0.5);
+      box-shadow: $shadow-lifted;
       z-index: 20;
     }
   }

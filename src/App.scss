@@ -6,6 +6,7 @@
 @import './styles/base/base';
 @import './styles/abstracts/mixins';
 @import './styles/layout/grid';
+@import './styles/base/variables';
 
 :export {
   oasisBlue: $oasis-blue;

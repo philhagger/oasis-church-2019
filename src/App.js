@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 // Styling
+import './linea-font.css';
 import './App.scss';
 
 // Components
@@ -10,6 +11,7 @@ import ScrollTop from './components/ScrollTop/ScrollTop';
 // Pages
 import InfoBlockPage from './pages/InfoBlockPage/InfoBlockPage';
 import WhatsOnPage from './pages/WhatsOnPage/WhatsOnPage';
+import OptionsPage from './pages/OptionsPage/OptionsPage';
 
 class App extends Component {
   render() {
@@ -20,6 +22,7 @@ class App extends Component {
           <ScrollTop />
           <InfoBlockPage />
           <WhatsOnPage />
+          <OptionsPage />
         </main>
       </div>
     );

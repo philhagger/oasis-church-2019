@@ -1,17 +1,31 @@
 //Project Colors
 $grey: #777777;
 $light-grey-1: #f7f7f7;
+$light-grey-2: #eeeeee;
 $white: #ffffff;
-$darkBlue: #29659a;
 $black: #000000;
 
-$lightGreen: #7ed56f;
-$mediumGreen: #55c57a;
-$darkGreen: #28b485;
+$primary-light: #40b64a;
+$primary-dark: #1e5222;
+
+$secondary-light: #ffb900;
+$secondary-dark: #ff7730;
+
+$tertiary-light: #2998ff;
+$tertiary-dark: #5643fa;
 
 //Oasis colours
-$oasisBlue: #1e70b8;
 $oasis-blue: #1e70b8;
-$oasisBlue2: #206fb7;
-$oasisGreen: #40b64a;
 $oasis-green: #40b64a;
+
+.background-primary {
+  background: linear-gradient(to right bottom, $primary-light, $primary-dark);
+}
+
+.background-secondary {
+  background: linear-gradient(to right bottom, $secondary-light, $secondary-dark);
+}
+
+.background-tertiary {
+  background: linear-gradient(to right bottom, $tertiary-light, $tertiary-dark);
+}

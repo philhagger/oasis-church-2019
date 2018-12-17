@@ -5,9 +5,10 @@
   padding: 25rem 0 50rem 0;
   margin-top: -10rem;
   position: relative;
+  clip-path: polygon(0 12%, 110% 0, 100% 100%, 0 100%);
 }
 
-.card {
+.card-front {
   &__picture {
     background-size: cover;
     height: 23rem;
@@ -15,18 +16,22 @@
     overflow: hidden;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 
     &--1 {
-      background-image: linear-gradient(to right bottom, $secondary-light, $secondary-dark), url(../../img/nat-5.jpg);
-      background-position: center top;
+      background-image: linear-gradient(to right bottom, $alpha-red, $alpha-red-dark), url(../../img/alpha-promo.jpg);
+      background-position: left top;
     }
 
     &--2 {
-      background-image: url(../../img/nat-6.jpg);
+      background-image: linear-gradient(to right bottom, $tertiary-light, $tertiary-dark), url(../../img/people/group-cropped.jpg);
+      background-position: center center;
     }
 
     &--3 {
-      background-image: url(../../img/nat-7.jpg);
+      background-image: linear-gradient(to right bottom, $tertiary-light, $tertiary-dark), url(../../img/nat-7.jpg);
+      background-position: center top;
     }
   }
 
@@ -36,7 +41,7 @@
     text-transform: uppercase;
     color: $white;
     position: absolute;
-    top: 12rem;
+    top: 14rem;
     right: 2rem;
     text-align: right;
     width: 60%;
@@ -47,10 +52,14 @@
       box-decoration-break: clone;
 
       &--1 {
-        background-image: linear-gradient(to right bottom, rgba($secondary-light, 0.85), rgba($secondary-dark, 0.85));
+        background-image: linear-gradient(to right bottom, rgba($alpha-red, 0.85), rgba($secondary-dark, 0.85));
       }
 
       &--2 {
+        background-image: linear-gradient(to right bottom, rgba($tertiary-light, 0.85), rgba($tertiary-dark, 0.85));
+      }
+
+      &--3 {
         background-image: linear-gradient(to right bottom, rgba($tertiary-light, 0.85), rgba($tertiary-dark, 0.85));
       }
     }
@@ -74,6 +83,17 @@
         }
       }
     }
+  }
+}
+.card-back {
+  &--1 {
+    background: linear-gradient(to right bottom, $alpha-red, $alpha-red-dark);
+  }
+  &--2 {
+    background: linear-gradient(to right bottom, $tertiary-light, $tertiary-dark);
+  }
+  &--3 {
+    background: linear-gradient(to right bottom, $tertiary-light, $tertiary-dark);
   }
 
   &__cta {

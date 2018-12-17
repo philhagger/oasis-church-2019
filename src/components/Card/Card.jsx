@@ -10,19 +10,19 @@ export const CardComplete = ({ heading, style, front, back, ...props }) => (
 );
 
 export const RotatingCard = ({ className, ...props }) => (
-  <div className={`card ${className}`} {...props}>
+  <div className={`card ${className ? className : ''}`} {...props}>
     {props.children}
   </div>
 );
 
 export const CardFront = ({ className, ...props }) => (
-  <div className={`card__side card__side--front ${className}`} {...props}>
+  <div className={`card__side card__side--front ${className ? className : ''}`} {...props}>
     {props.children}
   </div>
 );
 
 export const CardBack = ({ className, ...props }) => (
-  <div className={`card__side card__side--back ${className}`} {...props}>
+  <div className={`card__side card__side--back ${className ? className : ''}`} {...props}>
     {props.children}
   </div>
 );

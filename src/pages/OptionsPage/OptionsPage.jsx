@@ -2,6 +2,7 @@ import React from 'react';
 import './OptionsPage.scss';
 
 import { RotatingCard, CardFront, CardBack } from '../../components/Card/Card';
+import { WhiteButton, GreenButton } from '../../components/Button/Button';
 
 const OptionsPage = () => (
   <section className="options">
@@ -10,35 +11,93 @@ const OptionsPage = () => (
     </div>
     <div className="row">
       <div className="col-1-of-3">
-        <RotatingCard className="card">
-          <CardFront>
-            <div className="card__picture card__picture--1">&nbsp;</div>
-            <h4 className="card__heading">
-              <span className="card__heading-span card__heading-span--1">The Sea Explorer</span>
+        <RotatingCard>
+          <CardFront className="card-front">
+            <div className="card-front__picture card-front__picture--1">&nbsp;</div>
+            <h4 className="card-front__heading">
+              <span className="card-front__heading-span card-front__heading-span--1">The Alpha Course</span>
             </h4>
-            <div className="card__details">
+            <div className="card-front__details">
               <ul>
-                <li>3 day tour</li>
-                <li>Up to 30 people</li>
-                <li>2 tour guides</li>
-                <li>Sleep in cozy hotels</li>
-                <li>Difficulty: easy</li>
+                <li>Got questions?</li>
+                <li>Explore Faith</li>
+                <li>Every Tuesday</li>
+                <li>for 8 weeks</li>
+                <li>Free Food included!</li>
               </ul>
             </div>
           </CardFront>
-          <CardBack className="background-secondary">
-            <div className="card__cta">
-              <div className="card__price-box">
-                <p className="card__price-only">Only</p>
-                <p className="card__price-value">£297</p>
+          <CardBack className="card-back card-back--1">
+            <div className="card-back__cta">
+              <div className="card-back__price-box">
+                <p className="card-back__price-only">Only</p>
+                <p className="card-back__price-value">£297</p>
               </div>
-              <button className="btn btn--white">Book now!</button>
+              <WhiteButton>Book Now!</WhiteButton>
             </div>
           </CardBack>
         </RotatingCard>
       </div>
-      <div className="col-1-of-3" />
-      <div className="col-1-of-3" />
+      <div className="col-1-of-3">
+        <RotatingCard>
+          <CardFront className="card-front">
+            <div className="card-front__picture card-front__picture--2">&nbsp;</div>
+            <h4 className="card-front__heading">
+              <span className="card-front__heading-span card-front__heading-span--2">School of Ministry</span>
+            </h4>
+            <div className="card-front__details">
+              <ul>
+                <li>Every Thursday</li>
+                <li>6:30pm</li>
+                <li>Go deeper and learn more</li>
+                <li>Be challenged and stretched</li>
+                <li />
+              </ul>
+            </div>
+          </CardFront>
+          <CardBack className="card-back card-back--2">
+            <div className="card-back__cta">
+              <div className="card-back__price-box">
+                <p className="card-back__price-only">Only</p>
+                <p className="card-back__price-value">£497</p>
+              </div>
+              <WhiteButton>Book Now!</WhiteButton>
+            </div>
+          </CardBack>
+        </RotatingCard>
+      </div>
+      <div className="col-1-of-3">
+        <RotatingCard>
+          <CardFront className="card-front">
+            <div className="card-front__picture card-front__picture--3">&nbsp;</div>
+            <h4 className="card-front__heading">
+              <span className="card-front__heading-span card-front__heading-span--3">Little Stars</span>
+            </h4>
+            <div className="card-front__details">
+              <ul>
+                <li>5 day tour</li>
+                <li>Up to 15 people</li>
+                <li>3 tour guides</li>
+                <li>Sleep in provided tents</li>
+                <li>Difficulty: hard</li>
+              </ul>
+            </div>
+          </CardFront>
+          <CardBack className="card-back card-back--3">
+            <div className="card-back__cta">
+              <div className="card-back__price-box">
+                <p className="card-back__price-only">Only</p>
+                <p className="card-back__price-value">£897</p>
+              </div>
+              <WhiteButton>Book Now!</WhiteButton>
+            </div>
+          </CardBack>
+        </RotatingCard>
+      </div>
+    </div>
+
+    <div className="u-center-text u-margin-top-large">
+      <GreenButton>Discover all Tours</GreenButton>
     </div>
   </section>
 );

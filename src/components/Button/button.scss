@@ -43,6 +43,15 @@
   color: $grey;
 }
 
+.btn--green {
+  background-color: $oasis-green;
+  color: $white;
+}
+
+.btn--green::after {
+  background-color: $oasis-green;
+}
+
 .btn--white::after {
   background-color: $white;
 }

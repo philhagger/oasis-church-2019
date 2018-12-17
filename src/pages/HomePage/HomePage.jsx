@@ -6,6 +6,7 @@ import InfoBlock from './InfoBlock/InfoBlock';
 import WhatsOnBlock from './WhatsOnBlock/WhatsOnBlock';
 import OptionsBlock from './OptionsBlock/OptionsBlock';
 import StoriesBlock from './StoriesBlock/StoriesBlock';
+import ContactBlock from './ContactBlock/ContactBlock';
 
 const HomePage = () => (
   <React.Fragment>
@@ -14,6 +15,7 @@ const HomePage = () => (
     <WhatsOnBlock />
     <OptionsBlock />
     <StoriesBlock />
+    <ContactBlock />
   </React.Fragment>
 );
 

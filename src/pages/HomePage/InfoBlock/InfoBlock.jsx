@@ -1,10 +1,10 @@
 import React from 'react';
 import scrollToElement from 'scroll-to-element';
 
-import './InfoBlockPage.scss';
-import ImageComposition from '../../components/ImageComposition/ImageComposition';
+import './InfoBlock.scss';
+import ImageComposition from '../../../components/ImageComposition/ImageComposition';
 
-const InfoBlockPage = () => (
+const InfoBlock = () => (
   <section className="section-about" id="info">
     <div className="u-center-text u-margin-bottom-large">
       <h2 className="heading-secondary">Growing communities of Faith, Love & Hope</h2>
@@ -30,4 +30,4 @@ const InfoBlockPage = () => (
   </section>
 );
 
-export default InfoBlockPage;
+export default InfoBlock;

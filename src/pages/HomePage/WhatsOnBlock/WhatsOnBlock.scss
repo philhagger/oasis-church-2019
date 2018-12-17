@@ -1,8 +1,8 @@
-@import '../../App.scss';
+@import '../../../App.scss';
 
 .whats-on {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba($oasis-green, 0.8), rgba($oasis-blue, 0.7)), url(../../img/hereford/hereford_hero.JPG);
+  background-image: linear-gradient(to right bottom, rgba($oasis-green, 0.8), rgba($oasis-blue, 0.7)), url(../../../img/hereford/hereford_hero.JPG);
   background-size: cover;
   background-position: top;
   position: relative;

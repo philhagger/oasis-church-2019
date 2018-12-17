@@ -1,7 +1,7 @@
 import React from 'react';
-import FeatureBox from '../../components/FeatureBox/FeatureBox';
+import FeatureBox from '../../../components/FeatureBox/FeatureBox';
 
-import './WhatsOn.scss';
+import './WhatsOnBlock.scss';
 
 const WhatsOn = () => (
   <section className="whats-on" id="whats-on">

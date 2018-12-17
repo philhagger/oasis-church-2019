@@ -4,7 +4,7 @@ import './Story.scss';
 const Story = ({ person, heading, ...props }) => (
   <div className="story">
     <figure className="story__shape">
-      <img src={person.img} className="story__image" />
+      <img src={person.img} alt={person.name} className="story__image" />
       <figcaption className="story__caption">{person.name}</figcaption>
     </figure>
     <div className="story__text">

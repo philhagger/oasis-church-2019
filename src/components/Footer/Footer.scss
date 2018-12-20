@@ -1,0 +1,63 @@
+@import '../../App.scss';
+
+.footer {
+  background-color: $dark-grey;
+  padding: 10rem;
+  font-size: 1.4rem;
+  color: $light-grey-1;
+
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  &__logo {
+    width: 15rem;
+    height: auto;
+  }
+
+  &__navigation {
+    border-top: 1px solid $grey;
+    padding-top: 2rem;
+    display: inline-block;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $light-grey-1;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.2s;
+      background-color: $dark-grey;
+    }
+
+    &:hover,
+    &:active {
+      color: $oasis-green;
+      //   box-shadow: 0 1rem 2rem rgba($black, 0.4);
+      transform: scale(1.05);
+    }
+  }
+
+  &__copyright {
+    border-top: 1px solid $grey;
+    padding-top: 2rem;
+    width: 80%;
+    float: right;
+    text-align: right;
+  }
+}

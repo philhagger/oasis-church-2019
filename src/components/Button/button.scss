@@ -53,6 +53,15 @@
   background-color: $oasis-green;
 }
 
+.btn--blue {
+  background-color: $oasis-blue;
+  color: $white;
+}
+
+.btn--blue::after {
+  background-color: $oasis-blue;
+}
+
 .btn--white::after {
   background-color: $white;
 }

@@ -31,7 +31,7 @@ const OptionsBlock = () => (
             <div className="card-back__cta">
               <div className="card-back__price-box">
                 <p className="card-back__price-only">Starting</p>
-                <p className="card-back__price-value">January 2019</p>
+                <p className="card-back__price-value">January 22nd</p>
               </div>
               <WhiteButton>Find out more</WhiteButton>
             </div>

@@ -2,5 +2,8 @@
 
 .stories-block {
   position: relative;
-  padding: 15rem 0 10rem 0;
+  padding: 25rem 0 20rem 0;
+  clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+  background-color: #eeeeee;
+  margin-top: -15rem;
 }

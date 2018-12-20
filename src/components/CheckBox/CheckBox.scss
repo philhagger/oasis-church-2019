@@ -1,0 +1,43 @@
+@import '../../App.scss';
+
+.checkbox-group {
+  position: relative;
+
+  &__checkbox-input {
+    display: none;
+  }
+
+  &__checkbox-input:checked ~ &__checkbox-label &__checkbox-button::after {
+    opacity: 1;
+  }
+
+  &__checkbox-label {
+    font-size: $default-font-size;
+    cursor: pointer;
+    padding-left: 4rem;
+  }
+
+  &__checkbox-button {
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid $oasis-green;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 1.3rem;
+      height: 1.3rem;
+      background-color: $oasis-green;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.2s;
+      opacity: 0;
+    }
+  }
+}

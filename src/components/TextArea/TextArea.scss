@@ -1,17 +1,18 @@
 @import '../../App.scss';
 
-.input-group {
-  &__input {
+.textarea-group {
+  margin-bottom: 2rem;
+  &__textarea {
     font-size: 1.5rem;
     font-family: inherit; // input elements don't inherit by default
     color: inherit; //inputs don't inherit by default
-    padding: 1.5rem 2rem;
+    border: none;
+    border-bottom: 3px solid transparent;
     border-radius: 2px;
     background-color: rgba($white, 0.6);
-    border: none;
-    border-bottom: 3px solid transparent; //stops the input moving
     width: 90%;
-    display: block;
+    resize: none;
+    padding: 1.5rem 2rem;
     transition: all 0.3s;
 
     &::-webkit-input-placeholder {
@@ -19,14 +20,10 @@
     }
 
     &:focus {
-      outline: none;
-      border-bottom: 3px solid $oasis-green;
-      box-shadow: 0 1rem 2rem rgba($black, 0.1);
       background-color: rgba($white, 1);
-    }
-
-    &:focus:invalid {
-      border-bottom: 3px solid $secondary-dark;
+      border-bottom: 3px solid $oasis-green;
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($black, 0.1);
     }
   }
 
@@ -39,20 +36,16 @@
     transition: all 0.3s;
   }
 
-  &__input:placeholder-shown + &__label {
+  &__textarea:placeholder-shown + &__label {
     // + adjacent sibling (immediately after)
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-4.2rem);
+    transform: translateY(-12rem);
   }
 
   &__input:not(:placeholder-shown) + &__label {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 2rem;
   }
 }

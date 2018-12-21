@@ -7,7 +7,7 @@ import { GreenButton } from '../../../components/Button/Button';
 import './ContactBlock.scss';
 
 const ContactBlock = () => (
-  <section className="contact">
+  <section className="contact" id="contact">
     <div className="row">
       <div className="book">
         <div className="book__form">

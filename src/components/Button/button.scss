@@ -13,6 +13,12 @@
   font-size: $default-font-size;
   position: relative;
 
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
   // the hover and active combined make the button look like it is physically pushed
   &:hover {
     transform: translateY(-3px);

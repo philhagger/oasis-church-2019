@@ -22,7 +22,7 @@ class StoriesBlock extends React.Component {
   }
   render() {
     return (
-      <section className="stories-block">
+      <section className="stories-block" id="podcasts">
         <BackgroundVideo videoMp4={herefordVideo} />
         <div className="u-center-text u-margin-bottom-large">
           <h2 className="heading-secondary">Our latest messages</h2>

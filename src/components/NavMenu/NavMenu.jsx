@@ -1,50 +1,57 @@
 import React from 'react';
 
+import scrollToElement from 'scroll-to-element';
+
 import './NavMenu.scss';
 
-const NavMenu = () => (
-  <div className="navigation">
-    <input type="checkbox" className="navigation__checkbox" id="nav-toggle" />
-    <label for="nav-toggle" className="navigation__button">
-      <span className="navigation__icon">&nbsp;</span>
-    </label>
-    <div className="navigation__background">&nbsp;</div>
+class NavMenu extends React.Component {
+  state = {
+    menuOpen: false
+  };
+  onMenuOpen = (target, offset) => {
+    this.setState({ menuOpen: !this.state.menuOpen });
+    scrollToElement(target, { ease: 'out-cube', duration: 800, offset: offset });
+  };
+  render() {
+    return (
+      <div className="navigation">
+        <input type="checkbox" className="navigation__checkbox" id="nav-toggle" defaultChecked={this.state.menuOpen} checked={this.state.menuOpen} />
+        <label for="nav-toggle" className="navigation__button" onClick={() => this.setState({ menuOpen: !this.state.menuOpen })}>
+          <span className="navigation__icon">&nbsp;</span>
+        </label>
+        <div className="navigation__background">&nbsp;</div>
 
-    <nav className="navigation__nav">
-      <ul className="navigation__list">
-        <li className="navigation__item">
-          <a href="#" className="navigation__link">
-            <span>01</span>
-            About Us
-          </a>
-        </li>
-        <li className="navigation__item">
-          <a href="#" className="navigation__link">
-            <span>02</span>
-            Your benefits
-          </a>
-        </li>
-        <li className="navigation__item">
-          <a href="#" className="navigation__link">
-            <span>03</span>
-            Popular Tours
-          </a>
-        </li>
-        <li className="navigation__item">
-          <a href="#" className="navigation__link">
-            <span>04</span>
-            Stories
-          </a>
-        </li>
-        <li className="navigation__item">
-          <a href="#" className="navigation__link">
-            <span>05</span>
-            Book Now
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-);
+        <nav className="navigation__nav">
+          <ul className="navigation__list">
+            <li className="navigation__item">
+              <a href="#" className="navigation__link" onClick={() => this.onMenuOpen('#info')}>
+                <span>01</span>
+                About Us
+              </a>
+            </li>
+            <li className="navigation__item">
+              <a href="#" className="navigation__link" onClick={() => this.onMenuOpen('#connect', 150)}>
+                <span>02</span>
+                Connect with us
+              </a>
+            </li>
+            <li className="navigation__item">
+              <a href="#" className="navigation__link" onClick={() => this.onMenuOpen('#podcasts', 150)}>
+                <span>03</span>
+                Podcasts
+              </a>
+            </li>
+            <li className="navigation__item">
+              <a href="#" className="navigation__link" onClick={() => this.onMenuOpen('#contact', 150)}>
+                <span>05</span>
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    );
+  }
+}
 
 export default NavMenu;

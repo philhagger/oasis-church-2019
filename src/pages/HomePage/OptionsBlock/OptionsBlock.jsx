@@ -5,7 +5,7 @@ import { RotatingCard, CardFront, CardBack } from '../../../components/Card/Card
 import { WhiteButton, GreenButton } from '../../../components/Button/Button';
 
 const OptionsBlock = () => (
-  <section className="options">
+  <section className="options" id="connect">
     <div className="u-center-text u-margin-bottom-large">
       <h2 className="heading-secondary">Connect with us</h2>
     </div>
@@ -33,7 +33,9 @@ const OptionsBlock = () => (
                 <p className="card-back__price-only">Starting</p>
                 <p className="card-back__price-value">January 22nd</p>
               </div>
-              <WhiteButton>Find out more</WhiteButton>
+              <a href="#alpha">
+                <WhiteButton>Find out more</WhiteButton>
+              </a>
             </div>
           </CardBack>
         </RotatingCard>
@@ -61,7 +63,9 @@ const OptionsBlock = () => (
                 <p className="card-back__price-only">Next Term starts</p>
                 <p className="card-back__price-value">September 2019</p>
               </div>
-              <WhiteButton>Find out more</WhiteButton>
+              <a href="#school-of-ministry">
+                <WhiteButton>Find out More</WhiteButton>
+              </a>
             </div>
           </CardBack>
         </RotatingCard>
@@ -89,7 +93,9 @@ const OptionsBlock = () => (
                 <p className="card-back__price-only">Join us</p>
                 <p className="card-back__price-value">Now</p>
               </div>
-              <WhiteButton>Find out more</WhiteButton>
+              <a href="#little-stars">
+                <WhiteButton>Find out more</WhiteButton>
+              </a>
             </div>
           </CardBack>
         </RotatingCard>

@@ -6,14 +6,11 @@
   height: 52rem;
 
   &__side {
-    color: $white;
     font-size: 2rem;
     height: 52rem;
     transition: all 0.8s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
+    overflow: hidden;
     backface-visibility: hidden;
     border-radius: $border-radius;
     box-shadow: $shadow;
@@ -24,6 +21,12 @@
 
     &--back {
       transform: rotateY(180deg);
+    }
+
+    &--rotating {
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 

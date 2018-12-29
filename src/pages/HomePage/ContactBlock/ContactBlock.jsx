@@ -23,7 +23,7 @@ const ContactBlock = () => (
             <TextArea id="message" label="Message" required />
 
             <div className="btn-group u-margin-top-medium">
-              <GreenButton>Next step &rarr;</GreenButton>
+              <GreenButton>Send message &rarr;</GreenButton>
             </div>
           </form>
         </div>

@@ -27,10 +27,10 @@ export const Modal = ({ id, title, ...props }) => (
   </div>
 );
 
-export const ModalLeftSplit = props => (
+export const ModalLeftSplit = (photoTop, photoBottom, props) => (
   <div className="popup__left">
-    <img src={photo1} alt="tour photos" className="popup__img" />
-    <img src={photo2} alt="tour photos" className="popup__img" />
+    <img src={photoTop} alt="modal top" className="popup__img" />
+    <img src={photoBottom} alt="modal bottom" className="popup__img" />
   </div>
 );
 

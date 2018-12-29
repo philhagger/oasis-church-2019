@@ -1,0 +1,55 @@
+@import '../../../App.scss';
+
+.sunday {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba($oasis-green, 0.8), rgba($oasis-blue, 0.7)), url(../../../img/hereford/hereford_hero.JPG);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  // clip-path: polygon(0 20vh, 100% 0, 100% 80vh, 0 100%);
+  margin-top: -10rem;
+  transform: skewY(-7deg);
+
+  // > = direct child * = all
+  & > * {
+    transform: skewY(7deg);
+  }
+
+  &__map {
+  }
+
+  &__card {
+    background-color: rgba($white, 0.9);
+    border-radius: 3px;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+    height: 45rem;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: $shadow-lifted;
+      background-color: $white;
+    }
+
+    &--info {
+      // border: 3px solid $oasis-blue;
+    }
+
+    &--map {
+    }
+  }
+
+  .sunday-info {
+    &__list {
+      list-style: none;
+      width: 60%;
+      margin: 0 auto;
+      font-size: 1.8rem;
+
+      li {
+        padding: 0.2rem 0;
+        display: block;
+      }
+    }
+  }
+}

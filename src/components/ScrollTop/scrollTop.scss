@@ -1,13 +1,32 @@
 @import '../../App';
 
 .scrollTop {
-  //border: 3px solid $oasisGreen;
-  background-image: linear-gradient(to right bottom, $oasis-green, $oasis-blue);
-  color: $white;
-  border-radius: 100px;
+  // border: 3px solid $oasis-green;
+  background-color: $white;
+  color: #777777;
+  // border-radius: 100px;
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
   position: fixed;
-  top: 89vh;
+  top: 90vh;
   right: 1rem;
-  padding: 1rem;
+  padding: 0.4rem;
+  text-align: center;
   cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: $shadow;
+
+  &:hover {
+    background-color: $oasis-green;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: $shadow-lifted;
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(1px);
+    box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+  }
 }

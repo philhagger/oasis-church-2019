@@ -27,7 +27,19 @@ export const Modal = ({ id, title, ...props }) => (
   </div>
 );
 
-export const ModalLeftSplit = (photoTop, photoBottom, props) => (
+export const ModalBlank = ({ id, title, ...props }) => (
+  <div className="popup" id={id}>
+    <div className="popup__content u-center-text">
+      <a href="#footer" className="popup__close">
+        &times;
+      </a>
+      <h2 className="heading-secondary u-margin-bottom-small u-margin-top-medium">{title}</h2>
+      <p className="popup__text">{props.children}</p>
+    </div>
+  </div>
+);
+
+export const ModalLeftSplit = ({ photoTop, photoBottom, ...props }) => (
   <div className="popup__left">
     <img src={photoTop} alt="modal top" className="popup__img" />
     <img src={photoBottom} alt="modal bottom" className="popup__img" />

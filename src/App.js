@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 // Styling
-import './linea-font.css';
+import './styles/external/linea-font.css';
+import './styles/external/linea-arrows.css';
 import './App.scss';
 
 // Components
@@ -17,7 +18,7 @@ class App extends Component {
         <NavMenu />
         <HomePage />
         <Footer />
-        <ScrollTop />
+        {/* <ScrollTop /> */}
       </div>
     );
   }

@@ -5,6 +5,9 @@ import { RotatingCard, CardFront, CardBack } from '../../../components/Card/Card
 import { WhiteButton, GreenButton } from '../../../components/Button/Button';
 import Modal, { ModalSplit, ModalLeftSplit, ModalRightSplit } from '../../../components/Modal/Modal';
 
+import photoAlphaTop from '../../../img/alpha-promo.jpg';
+import photoAlphaBottom from '../../../img/alpha-promo.jpg';
+
 const ConnectBlock = () => (
   <React.Fragment>
     <section className="options" id="connect">
@@ -117,7 +120,7 @@ const ConnectBlock = () => (
     </Modal>
 
     <ModalSplit id={'school-of-ministry'} title="School of Ministry">
-      <ModalLeftSplit />
+      <ModalLeftSplit photoTop={photoAlphaTop} photoBottom={photoAlphaBottom} />
       <ModalRightSplit title="School of Ministry">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure esse unde, ducimus nihil velit numquam assumenda quia ipsum quod at, quasi corrupti animi amet odio reiciendis
         ex libero fugit debitis.

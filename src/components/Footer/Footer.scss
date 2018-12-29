@@ -20,6 +20,7 @@
     border-top: 1px solid $grey;
     padding-top: 2rem;
     display: inline-block;
+    width: 80%;
   }
 
   &__list {
@@ -61,3 +62,13 @@
     text-align: right;
   }
 }
+
+// .popup__content {
+//   padding: 0 5rem;
+// }
+// .popup__text {
+//   overflow-y: scroll;
+//   max-height: 60vh;
+//   text-align: left;
+//   columns: 2;
+// }

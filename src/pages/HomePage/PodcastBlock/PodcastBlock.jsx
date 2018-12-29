@@ -9,9 +9,9 @@ import BackgroundVideo from '../../../components/BackgroundVideo/BackgroundVideo
 
 import herefordVideo from '../../../img/hereford/hereford.mp4';
 
-import './StoriesBlock.scss';
+import './PodcastBlock.scss';
 
-class StoriesBlock extends React.Component {
+class PodcastBlock extends React.Component {
   state = {
     stories: []
   };
@@ -58,4 +58,4 @@ class StoriesBlock extends React.Component {
   }
 }
 
-export default StoriesBlock;
+export default PodcastBlock;

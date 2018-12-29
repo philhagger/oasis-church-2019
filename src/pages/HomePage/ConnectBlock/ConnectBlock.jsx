@@ -1,10 +1,10 @@
 import React from 'react';
-import './OptionsBlock.scss';
+import './ConnectBlock.scss';
 
 import { RotatingCard, CardFront, CardBack } from '../../../components/Card/Card';
 import { WhiteButton, GreenButton } from '../../../components/Button/Button';
 
-const OptionsBlock = () => (
+const ConnectBlock = () => (
   <section className="options" id="connect">
     <div className="u-center-text u-margin-bottom-large">
       <h2 className="heading-secondary">Connect with us</h2>
@@ -108,4 +108,4 @@ const OptionsBlock = () => (
   </section>
 );
 
-export default OptionsBlock;
+export default ConnectBlock;

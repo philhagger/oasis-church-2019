@@ -24,31 +24,31 @@ class NavMenu extends React.Component {
         <nav className="navigation__nav">
           <ul className="navigation__list">
             <li className="navigation__item">
-              <a href="#info" className="navigation__link" onClick={() => this.onMenuOpen('#info')}>
+              <a href="#info" className="navigation__link" onClick={() => this.onMenuOpen('#info', 130)}>
                 <span>01</span>
                 About Us
               </a>
             </li>
             <li className="navigation__item">
-              <a href="#sundays" className="navigation__link" onClick={() => this.onMenuOpen('#sunday', 150)}>
+              <a href="#sundays" className="navigation__link" onClick={() => this.onMenuOpen('#sunday', 200)}>
                 <span>02</span>
                 Sunday Services
               </a>
             </li>
             <li className="navigation__item">
-              <a href="#connect" className="navigation__link" onClick={() => this.onMenuOpen('#connect', 150)}>
+              <a href="#connect" className="navigation__link" onClick={() => this.onMenuOpen('#connect', 200)}>
                 <span>03</span>
                 Connect with us
               </a>
             </li>
             <li className="navigation__item">
-              <a href="#podcasts" className="navigation__link" onClick={() => this.onMenuOpen('#podcasts', 150)}>
+              <a href="#podcasts" className="navigation__link" onClick={() => this.onMenuOpen('#podcasts', 200)}>
                 <span>04</span>
                 Podcasts
               </a>
             </li>
             <li className="navigation__item">
-              <a href="#contact" className="navigation__link" onClick={() => this.onMenuOpen('#contact', 150)}>
+              <a href="#contact" className="navigation__link" onClick={() => this.onMenuOpen('#contact', 200)}>
                 <span>05</span>
                 Contact Us
               </a>

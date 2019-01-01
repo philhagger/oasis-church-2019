@@ -4,7 +4,6 @@ import React from 'react';
 import ConnectBlock from './ConnectBlock/ConnectBlock';
 import HeaderBlock from './HeaderBlock/HeaderBlock';
 import InfoBlock from './InfoBlock/InfoBlock';
-// import WhatsOnBlock from './WhatsOnBlock/WhatsOnBlock';
 import PodcastBlock from './PodcastBlock/PodcastBlock';
 import ContactBlock from './ContactBlock/ContactBlock';
 import SundayServicesBlock from './SundayServicesBlock/SundayServicesBlock';

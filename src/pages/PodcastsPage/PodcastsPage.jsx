@@ -9,3 +9,5 @@ const PodcastsPage = () => (
 );
 
 export default PodcastsPage;
+
+// Table with all of the podcasts, filterable by speaker, topic, date and with a search box

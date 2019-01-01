@@ -1,10 +1,10 @@
 import React from 'react';
 import FeatureBox from '../../../components/FeatureBox/FeatureBox';
 
-import './WhatsOnBlock.scss';
+import './CoreValuesBlock.scss';
 
-const WhatsOn = () => (
-  <section className="whats-on" id="whats-on">
+const CoreValuesBlock = () => (
+  <section className="core-values" id="core-values">
     <div>
       <div className="row">
         <div className="col-1-of-4">
@@ -44,4 +44,4 @@ const WhatsOn = () => (
   </section>
 );
 
-export default WhatsOn;
+export default CoreValuesBlock;

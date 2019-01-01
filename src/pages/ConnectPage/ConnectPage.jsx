@@ -9,3 +9,9 @@ const ConnectPage = () => (
 );
 
 export default ConnectPage;
+
+// Life streams (house groups)
+// Messy church
+// Alpha
+// School of ministry
+// Little Stars

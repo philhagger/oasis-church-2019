@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import Story from '../../../components/Story/Story';
 import BackgroundVideo from '../../../components/BackgroundVideo/BackgroundVideo';
 
@@ -36,22 +38,11 @@ class PodcastBlock extends React.Component {
           </div>
         ))}
 
-        {/*<div className="row">
-          <Story heading="The importance of being ernest" person={{ name: 'Phil Arnold', img: person1 }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eaque hic ab dolorum debitis nulla rerum sint culpa consectetur! Vero optio saepe, nulla tempore eveniet
-            quas earum dolores ratione nisi. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </Story>
-        </div>
-
-        <div className="row">
-          <Story heading="Make time" person={{ name: 'Phil Hagger', img: person2 }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eaque hic ab dolorum debitis nulla rerum sint culpa consectetur! Vero optio saepe, nulla tempore eveniet
-            quas earum dolores ratione nisi. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </Story>
-        </div>*/}
-
         <div className="u-center-text">
-          <div className="btn-text">Listen to more messages &rarr;</div>
+          <Link to="/podcasts" className="btn-text">
+            Listen to more message &rarr;
+          </Link>
+          {/* <div className="btn-text">Listen to more messages &rarr;</div> */}
         </div>
       </section>
     );

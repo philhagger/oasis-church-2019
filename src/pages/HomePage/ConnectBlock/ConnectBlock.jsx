@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './ConnectBlock.scss';
 
 import { RotatingCard, CardFront, CardBack } from '../../../components/Card/Card';
@@ -11,7 +13,7 @@ import Modal, { ModalSplit, ModalLeftSplit, ModalRightSplit } from '../../../com
 import photoSchoolTop from '../../../img/people/group.jpeg';
 import photoSchoolBottom from '../../../img/people/schoolbottom.jpeg';
 
-const ConnectBlock = () => (
+const ConnectBlock = props => (
   <React.Fragment>
     <section className="options" id="connect">
       <div className="u-center-text u-margin-bottom-large">
@@ -111,7 +113,9 @@ const ConnectBlock = () => (
       </div>
 
       <div className="u-center-text u-margin-top-large">
-        <GreenButton>More ways to connect</GreenButton>
+        <Link to="/connect">
+          <GreenButton>More ways to connect</GreenButton>
+        </Link>
       </div>
     </section>
     <Modal id={'alpha'} title="Alpha Course">

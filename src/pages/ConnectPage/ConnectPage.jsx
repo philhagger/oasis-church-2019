@@ -9,9 +9,8 @@ const ConnectPage = () => (
 );
 
 export default ConnectPage;
-
-// Life streams (house groups)
-// Messy church
-// Alpha
-// School of ministry
-// Little Stars
+// TODO: Life streams (house groups)
+// TODO: Messy church
+// TODO: Alpha
+// TODO: School of ministry
+// TODO: Little Stars

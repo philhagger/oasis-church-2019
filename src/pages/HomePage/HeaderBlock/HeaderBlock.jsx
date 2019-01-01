@@ -1,7 +1,7 @@
 import React from 'react';
 import scrollToElement from 'scroll-to-element';
 
-import logo from '../../../img/logo/logo-white.png';
+import logo from './logo-white-sm.png';
 import './HeaderBlock.scss';
 
 import { WhiteButton } from '../../../components/Button/Button';

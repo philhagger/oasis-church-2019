@@ -20,17 +20,17 @@
     border-top-right-radius: 3px;
 
     &--1 {
-      background-image: linear-gradient(to right bottom, $alpha-red, $alpha-red-dark), url(../../../img/alpha-promo.jpg);
+      background-image: linear-gradient(to right bottom, $alpha-red, $alpha-red-dark), url(./alpha-promo-sm.jpg);
       background-position: left top;
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, $tertiary-light, $tertiary-dark), url(../../../img/people/group-cropped.jpg);
+      background-image: linear-gradient(to right bottom, $tertiary-light, $tertiary-dark), url(./school-sm.jpg);
       background-position: center center;
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, $yellow-light, $yellow-dark), url(../../../img/people/IMG_1361.JPG);
+      background-image: linear-gradient(to right bottom, $yellow-light, $yellow-dark), url(./little-stars-sm.jpg);
       background-position: left top;
     }
   }

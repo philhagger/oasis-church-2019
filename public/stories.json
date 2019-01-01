@@ -2,7 +2,7 @@
   "stories": [
     {
       "title": "The importance of being earnest",
-      "speaker": { "name": "Phil Arnold", "imageURL": "phil-arnold.jpg" },
+      "speaker": { "name": "Phil Arnold", "imageURL": "phil-arnold-sm.jpg" },
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eaque hic ab dolorum debitis nulla rerum sint culpa consectetur! Vero optio saepe, nulla tempore eveniet quas earum dolores ratione nisi.",
       "url": "",
       "tags": "",
@@ -12,7 +12,7 @@
       "title": "Make time",
       "speaker": {
         "name": "Phil Hagger",
-        "imageURL": "IMG_2118.JPG"
+        "imageURL": "phil-hagger-sm.jpg"
       },
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eaque hic ab dolorum debitis nulla rerum sint culpa consectetur! Vero optio saepe, nulla tempore eveniet quas earum dolores ratione nisi.",
       "url": "",

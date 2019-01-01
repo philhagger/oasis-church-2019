@@ -10,7 +10,8 @@
 }
 
 .book {
-  background-image: linear-gradient(105deg, rgba($white, 0.8) 0%, rgba($white, 0.8) 50%, transparent 50%), url(../../../img/people/IMG_2114.JPG);
+  // background-image: linear-gradient(105deg, rgba($white, 0.8) 0%, rgba($white, 0.8) 50%, transparent 50%), url(../../../img/people/IMG_2114.JPG);
+  background-image: linear-gradient(105deg, rgba($white, 0.8) 0%, rgba($white, 0.8) 50%, transparent 50%), url(./worship-sm.jpg);
   background-size: cover;
   background-position: center;
   border-radius: $border-radius;

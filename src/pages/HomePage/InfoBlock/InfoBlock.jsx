@@ -4,6 +4,10 @@ import scrollToElement from 'scroll-to-element';
 import './InfoBlock.scss';
 import ImageComposition from '../../../components/ImageComposition/ImageComposition';
 
+import img1 from './img1.jpg';
+import img2 from './img2.jpg';
+import img3 from './img3.jpg';
+
 const InfoBlock = () => (
   <section className="section-about" id="info">
     <div className="u-center-text u-margin-bottom-large">
@@ -24,7 +28,7 @@ const InfoBlock = () => (
         </div>
       </div>
       <div className={'col-1-of-2'}>
-        <ImageComposition />
+        <ImageComposition img1={img1} img2={img2} img3={img3} />
       </div>
     </div>
   </section>

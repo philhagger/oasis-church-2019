@@ -3,7 +3,7 @@ import React from 'react';
 import { ModalBlank } from '../Modal/Modal';
 import PrivacyPolicy from './PrivacyPolicy';
 
-import logo from '../../img/logo/logo-white.png';
+import logo from './logo-white-sm.png';
 import './Footer.scss';
 
 const Footer = () => (

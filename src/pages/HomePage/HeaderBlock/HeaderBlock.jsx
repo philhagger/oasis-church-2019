@@ -18,7 +18,7 @@ const Header = ({ title, subtitle }) => (
         <span className="heading-primary--main">{title}</span>
         <span className="heading-primary--sub">{subtitle}</span>
       </h1>
-      <WhiteButton className="btn--animated" onClick={() => scrollToElement('#info', { ease: 'out-cube', duration: 800 })}>
+      <WhiteButton className="btn--animated" onClick={() => scrollToElement('#info', { ease: 'out-cube', duration: 800, offset: 120 })}>
         Discover more
       </WhiteButton>
     </div>

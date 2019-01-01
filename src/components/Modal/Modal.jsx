@@ -34,7 +34,7 @@ export const ModalBlank = ({ id, title, ...props }) => (
         &times;
       </a>
       <h2 className="heading-secondary u-margin-bottom-small u-margin-top-medium">{title}</h2>
-      <p className="popup__text">{props.children}</p>
+      <div className="popup__text">{props.children}</div>
     </div>
   </div>
 );
@@ -52,9 +52,7 @@ export const ModalRightSplit = props => (
       &times;
     </a>
     <h2 className="heading-secondary u-margin-bottom-small">{props.title}</h2>
-    <h3 className="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
-    <p className="popup__text">{props.children}</p>
-    <GreenButton>Book now</GreenButton>
+    <div className="popup__text">{props.children}</div>
   </div>
 );
 

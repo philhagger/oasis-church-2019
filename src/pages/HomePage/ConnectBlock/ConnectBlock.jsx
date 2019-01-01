@@ -5,8 +5,11 @@ import { RotatingCard, CardFront, CardBack } from '../../../components/Card/Card
 import { WhiteButton, GreenButton } from '../../../components/Button/Button';
 import Modal, { ModalSplit, ModalLeftSplit, ModalRightSplit } from '../../../components/Modal/Modal';
 
-import photoAlphaTop from '../../../img/alpha-promo.jpg';
-import photoAlphaBottom from '../../../img/alpha-promo.jpg';
+// import photoAlphaTop from '../../../img/alpha-promo.jpg';
+// import photoAlphaBottom from '../../../img/alpha-promo.jpg';
+
+import photoSchoolTop from '../../../img/people/group.jpeg';
+import photoSchoolBottom from '../../../img/people/schoolbottom.jpeg';
 
 const ConnectBlock = () => (
   <React.Fragment>
@@ -58,7 +61,7 @@ const ConnectBlock = () => (
                   <li>Go deeper & learn more</li>
                   <li>Stretch your faith</li>
                   <li>Be challenged!</li>
-                  <li />
+                  <li>£25 per term</li>
                 </ul>
               </div>
             </CardFront>
@@ -120,10 +123,26 @@ const ConnectBlock = () => (
     </Modal>
 
     <ModalSplit id={'school-of-ministry'} title="School of Ministry">
-      <ModalLeftSplit photoTop={photoAlphaTop} photoBottom={photoAlphaBottom} />
+      <ModalLeftSplit photoTop={photoSchoolTop} photoBottom={photoSchoolBottom} />
       <ModalRightSplit title="School of Ministry">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure esse unde, ducimus nihil velit numquam assumenda quia ipsum quod at, quasi corrupti animi amet odio reiciendis
-        ex libero fugit debitis.
+        <h3 className="heading-tertiary">The course</h3>
+        <p>
+          Our main theme for the coming year will be APPRENTICES OF JESUS. As we observe the life and ministry of Jesus, its clear that preparing his apprentices to engage in his
+          mission, sharing his heart, proclaiming the message of the kingdom with power; making a difference as salt and light in their world; was an absolute priority. During our
+          time together we will explore a range of Bible truths with practical application to life and ministry.
+        </p>
+
+        <h3 className="heading-tertiary u-margin-top-medium">The Format</h3>
+        <p>
+          Thursday nights begin with worship followed by opportunities to listen and respond to the Holy Spirit. Teaching sessions include discussion and feedback with the aim of
+          acquiring greater clarity and depth in our understanding of the Message of the Bible and the Mission of God in our world. Monthly Focus Days involve visiting speakers,
+          ministering in three sessions from 9am to 3pm on a Saturday.
+        </p>
+        <div className="u-margin-top-medium">
+          <a href="mailto:school@theoasis.church">
+            <GreenButton>Apply now</GreenButton>
+          </a>
+        </div>
       </ModalRightSplit>
     </ModalSplit>
   </React.Fragment>

@@ -17,7 +17,7 @@ const Footer = () => (
           <div className="footer__navigation">
             <ul className="footer__list">
               <li className="footer__item">
-                <a href="#" className="footer__link">
+                <a href="#site-map" className="footer__link">
                   Site Map
                 </a>
               </li>

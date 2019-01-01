@@ -19,8 +19,8 @@ const InfoBlock = () => (
         <p className={'paragraph'}>
           We are a community of believers from diverse backgrounds. Come expecting to be welcomed and valued for who you are not for what you look like!
         </p>
-        <div className="btn-text" onClick={() => scrollToElement('#whats-on', { ease: 'out-cube', duration: 800 })}>
-          Learn more &rarr;
+        <div className="btn-text" onClick={() => scrollToElement('#sunday', { ease: 'out-cube', duration: 800, offset: 130 })}>
+          Join us &rarr;
         </div>
       </div>
       <div className={'col-1-of-2'}>

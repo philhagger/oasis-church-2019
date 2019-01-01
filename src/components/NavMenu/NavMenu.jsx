@@ -15,8 +15,8 @@ class NavMenu extends React.Component {
   render() {
     return (
       <div className="navigation">
-        <input type="checkbox" className="navigation__checkbox" id="nav-toggle" defaultChecked={this.state.menuOpen} checked={this.state.menuOpen} />
-        <label for="nav-toggle" className="navigation__button" onClick={() => this.setState({ menuOpen: !this.state.menuOpen })}>
+        <input type="checkbox" className="navigation__checkbox" id="nav-toggle" readOnly checked={this.state.menuOpen} />
+        <label htmlFor="nav-toggle" className="navigation__button" onClick={() => this.setState({ menuOpen: !this.state.menuOpen })}>
           <span className="navigation__icon">&nbsp;</span>
         </label>
         <div className="navigation__background">&nbsp;</div>
@@ -30,7 +30,7 @@ class NavMenu extends React.Component {
               </a>
             </li>
             <li className="navigation__item">
-              <a href="#sundays" className="navigation__link" onClick={() => this.onMenuOpen('#sunday', 200)}>
+              <a href="#sundays" className="navigation__link" onClick={() => this.onMenuOpen('#sunday', 130)}>
                 <span>02</span>
                 Sunday Services
               </a>

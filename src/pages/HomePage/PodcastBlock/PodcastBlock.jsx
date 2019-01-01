@@ -4,12 +4,7 @@ import { Link } from 'react-router-dom';
 import Story from '../../../components/Story/Story';
 import BackgroundVideo from '../../../components/BackgroundVideo/BackgroundVideo';
 
-// import person1 from '../../../img/nat-8.jpg';
-// import person1 from '../../../img/people/phil-arnold.jpg';
-// import person2 from '../../../img/nat-9.jpg';
-// import person2 from '../../../img/people/IMG_2118.JPG';
-
-import herefordVideo from '../../../img/hereford/hereford.mp4';
+import herefordVideo from './hereford.mp4';
 
 import './PodcastBlock.scss';
 

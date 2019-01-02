@@ -46,12 +46,12 @@ export const ModalLeftSplit = ({ photoTop, photoBottom, ...props }) => (
   </div>
 );
 
-export const ModalRightSplit = props => (
+export const ModalRightSplit = ({ title, titleClass, ...props }) => (
   <div className="popup__right">
     <a href="#connect-with-us" className="popup__close">
       &times;
     </a>
-    <h2 className="heading-secondary u-margin-bottom-small">{props.title}</h2>
+    <h2 className={`u-margin-bottom-small ${titleClass ? titleClass : 'heading-secondary'}`}>{title}</h2>
     <div className="popup__text">{props.children}</div>
   </div>
 );

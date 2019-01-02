@@ -5,15 +5,15 @@ import './ConnectBlock.scss';
 
 import { RotatingCard, CardFront, CardBack } from '../../../components/Card/Card';
 import { WhiteButton, GreenButton } from '../../../components/Button/Button';
-import Modal, { ModalSplit, ModalLeftSplit, ModalRightSplit } from '../../../components/Modal/Modal';
+import { ModalSplit, ModalLeftSplit, ModalRightSplit } from '../../../components/Modal/Modal';
 
-// import photoAlphaTop from '../../../img/alpha-promo.jpg';
-// import photoAlphaBottom from '../../../img/alpha-promo.jpg';
+import photoAlphaTop from './img/alpha-promo-md.jpg';
+import photoAlphaBottom from './img/alpha-promo-2.jpg';
 
-import photoSchoolTop from '../../../img/people/group.jpeg';
-import photoSchoolBottom from '../../../img/people/schoolbottom.jpeg';
+import photoSchoolTop from './img/school-md.jpg';
+import photoSchoolBottom from './img/school-of-ministry-md.png';
 
-const ConnectBlock = props => (
+const ConnectBlock = () => (
   <React.Fragment>
     <section className="options" id="connect">
       <div className="u-center-text u-margin-bottom-large">
@@ -118,13 +118,27 @@ const ConnectBlock = props => (
         </Link>
       </div>
     </section>
-    <Modal id={'alpha'} title="Alpha Course">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nemo quibusdam debitis ad at sit accusamus. Blanditiis sit illum quis. Cumque possimus ducimus eos
-      laudantium tenetur deleniti tempora autem debitis.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nemo quibusdam debitis ad at sit accusamus. Blanditiis
-      sit illum quis. Cumque possimus ducimus eos laudantium tenetur deleniti tempora autem debitis.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nemo
-      quibusdam debitis ad at sit accusamus. Blanditiis sit illum quis. Cumque possimus ducimus eos laudantium tenetur deleniti tempora autem debitis.Lorem ipsum, dolor sit amet
-      consectetur adipisicing elit.
-    </Modal>
+
+    <ModalSplit id={'alpha'} title="Alpha Course">
+      <ModalLeftSplit photoTop={photoAlphaTop} photoBottom={photoAlphaBottom} />
+      <ModalRightSplit title="The Alpha Course" titleClass="alpha__heading">
+        <h3 className="heading-tertiary">The course</h3>
+        <p className="alpha">
+          Alpha is a series of sessions exploring the Christian faith. Each talk looks at a different question around faith and is designed to create conversation. Alpha is run all
+          around the globe, and everyone's welcome. It runs in cafés, churches, universities, homes—you name it. No two Alphas look the same, but generally they have three key
+          things in common: food, a talk and good conversation.
+        </p>
+
+        <h3 className="heading-tertiary u-margin-top-medium">The Format</h3>
+        <p>
+          First up there's: <span className="alpha__emphasis">Food</span>
+          <br />
+          Then a: <span className="alpha__emphasis">Talk</span>
+          <br />
+          Followed by: <span className="alpha__emphasis">Discussion</span>
+        </p>
+      </ModalRightSplit>
+    </ModalSplit>
 
     <ModalSplit id={'school-of-ministry'} title="School of Ministry">
       <ModalLeftSplit photoTop={photoSchoolTop} photoBottom={photoSchoolBottom} />
@@ -147,6 +161,13 @@ const ConnectBlock = props => (
             <GreenButton>Apply now</GreenButton>
           </a>
         </div>
+      </ModalRightSplit>
+    </ModalSplit>
+
+    <ModalSplit id={'little-stars'} title="Little Stars">
+      <ModalLeftSplit photoTop={photoSchoolTop} photoBottom={photoSchoolBottom} />
+      <ModalRightSplit title="Little Stars">
+        <h2 className="heading-secondary u-margin-bottom-small">Little Stars</h2>
       </ModalRightSplit>
     </ModalSplit>
   </React.Fragment>

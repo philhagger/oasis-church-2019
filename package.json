@@ -4,12 +4,13 @@
   "private": true,
   "dependencies": {
     "imagemin-webpack": "^4.0.1",
+    "moment": "^2.23.0",
     "node-sass": "^4.10.0",
     "normalize-css": "^2.3.1",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
     "react-feather": "^1.1.4",
-    "react-recaptcha-google": "^1.1.1",
+    "react-google-recaptcha": "^1.0.5",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
     "scroll-to-element": "^2.0.2"

@@ -1,23 +1,31 @@
 {
   "stories": [
     {
-      "title": "The importance of being earnest",
-      "speaker": { "name": "Phil Arnold", "imageURL": "phil-arnold-sm.jpg" },
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eaque hic ab dolorum debitis nulla rerum sint culpa consectetur! Vero optio saepe, nulla tempore eveniet quas earum dolores ratione nisi.",
-      "url": "",
-      "tags": "",
+      "title": "Followers of Jesus",
+      "series": "",
+      "speaker": { "name": "Graham Phillips", "imageURL": "graham-phillips-2.jpg" },
+      "date": "2018-11-18",
+      "description": "Graham Phillips from Life Spring Wolverhampton visits us, bringing a message about being followers of Jesus.",
+      "url": "2018.11.18-Graham_Phillips.m4a",
       "id": 1
     },
     {
-      "title": "Make time",
-      "speaker": {
-        "name": "Phil Hagger",
-        "imageURL": "phil-hagger-sm.jpg"
-      },
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eaque hic ab dolorum debitis nulla rerum sint culpa consectetur! Vero optio saepe, nulla tempore eveniet quas earum dolores ratione nisi.",
-      "url": "",
-      "tags": "",
+      "title": "His Presence - Part 2",
+      "series": "His Presence",
+      "speaker": { "name": "Phil Arnold", "imageURL": "phil-arnold-sm.jpg" },
+      "date": "2018-10-28",
+      "description": "Phil shares the importance of His presence in the second part of this message",
+      "url": "2018.10.28-Phil_A-His_Presence_Part_2.m4a",
       "id": 2
+    },
+    {
+      "title": "His Presence - Part 1",
+      "series": "His Presence",
+      "speaker": "Phil Arnold",
+      "description": "Phil shares the importance of His presence in the first part of this message",
+      "url": "2018.10.14-Phil_A-His_Presence_Part_1.m4a",
+      "date": "2018-10-14",
+      "id": 3
     }
   ]
 }

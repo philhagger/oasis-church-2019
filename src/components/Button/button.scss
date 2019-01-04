@@ -20,7 +20,7 @@
   }
 
   // the hover and active combined make the button look like it is physically pushed
-  &:hover {
+  &:not(:disabled):hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(black, 0.2);
   }
@@ -53,6 +53,11 @@
 .btn--green {
   background-color: $oasis-green;
   color: $white;
+
+  &:disabled {
+    background-color: lighten($oasis-green, 30%);
+    cursor: default;
+  }
 }
 
 .btn--green::after {

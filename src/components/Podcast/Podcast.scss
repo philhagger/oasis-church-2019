@@ -1,0 +1,73 @@
+@import '../../App.scss';
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($black, 0.1);
+  background-color: rgba($white, 0.6);
+  border-radius: $border-radius;
+  padding: 4rem 6rem 2rem 6rem;
+  padding-left: 9rem;
+  font-size: $default-font-size;
+  transform: skewX(-12deg);
+  & > * {
+    transform: skewX(12deg);
+  }
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-2rem) skewX(12deg);
+    position: relative;
+  }
+
+  &__image {
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+
+  &__caption {
+    @include align-center;
+    transform: translate(-50%, 20%);
+    text-transform: uppercase;
+    color: $white;
+    font-size: 1.7rem;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+
+  &__text {
+    transform: skewX(12deg);
+    min-height: 10rem;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__image {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
+  }
+
+  &__audio {
+    margin-left: 15rem;
+    margin-top: 2rem;
+  }
+
+  .audio {
+    width: 100%;
+    height: 3rem;
+  }
+
+  .date-text {
+    color: #1e70b8;
+  }
+}

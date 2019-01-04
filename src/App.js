@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { loadReCaptcha } from 'react-recaptcha-google';
 
 // Styling
 import './styles/external/linea-font.css';
@@ -18,9 +17,7 @@ import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import Footer from './components/Footer/Footer';
 
 class App extends Component {
-  componentDidMount() {
-    loadReCaptcha();
-  }
+  componentDidMount() {}
   render() {
     return (
       <Router>

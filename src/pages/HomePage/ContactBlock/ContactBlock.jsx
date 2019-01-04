@@ -1,5 +1,5 @@
-import React from 'react';
-import { ReCaptcha } from 'react-recaptcha-google';
+import React, { useState } from 'react';
+import ReCaptcha from 'react-google-recaptcha';
 
 import Input from '../../../components/Input/Input';
 import TextArea from '../../../components/TextArea/TextArea';
@@ -7,74 +7,112 @@ import { GreenButton } from '../../../components/Button/Button';
 
 import './ContactBlock.scss';
 
-class ContactBlock extends React.Component {
-  componentDidMount() {}
-  onLoadCallback = () => {};
-  verifyCallback = recaptchaToken => console.log('recaptcha', recaptchaToken);
-  render() {
-    return (
-      <section className="contact" id="contact">
-        <div className="row">
-          <div className="book">
-            <div className="book__form">
-              <form action="#" className="form">
-                <div className="u-margin-bottom-medium">
-                  <h3 className="heading-secondary">Get in touch</h3>
-                </div>
+const ContactBlock = () => {
+  const [disabled, setDisabled] = useState(true);
+  const [recaptcha, setRecaptcha] = useState(null);
 
-                <Input type="text" id="name" label="Full Name" required />
+  const handleChange = value => {
+    setRecaptcha(value);
+    setDisabled(false);
+  };
 
-                <Input type="email" id="email" label="Email Address" required />
+  const handleExpired = () => {
+    setRecaptcha(null);
+    setDisabled(true);
+  };
 
-                <TextArea id="message" label="Message" required />
+  const handleSubmit = event => {
+    event.preventDefault();
+    console.log('Recaptcha', recaptcha);
+  };
 
-                <ReCaptcha
-                  rel={el => {
-                    this.contactCaptcha = el;
-                  }}
-                  size="normal"
-                  render="explicit"
-                  sitekey="6Lfk3oUUAAAAAOxRML-Tcg5Y79Nyeeidj6OJ3Ha7"
-                  onLoadCallback={this.onLoadCallback}
-                  verifyCallback={this.verifyCallback}
-                />
+  return (
+    <section className="contact" id="contact">
+      <div className="row">
+        <div className="book">
+          <div className="book__form">
+            <form action="#" className="form" onSubmit={handleSubmit}>
+              <div className="u-margin-bottom-medium">
+                <h3 className="heading-secondary">Get in touch</h3>
+              </div>
 
-                <div className="btn-group u-margin-top-medium">
-                  <GreenButton>Send message &rarr;</GreenButton>
-                </div>
-              </form>
-            </div>
+              <Input type="text" id="name" name="name" label="Full Name" required />
+
+              <Input type="email" id="email" name="email" label="Email Address" required />
+
+              <TextArea id="message" name="message" label="Message" required />
+
+              <ReCaptcha sitekey="6Lfk3oUUAAAAAOxRML-Tcg5Y79Nyeeidj6OJ3Ha7" name="recaptcha" onExpired={handleExpired} onChange={handleChange} />
+
+              <div type="submit" className="btn-group u-margin-top-medium">
+                <GreenButton disabled={disabled}>Send message &rarr;</GreenButton>
+              </div>
+            </form>
           </div>
         </div>
-      </section>
-    );
-  }
-}
+      </div>
+    </section>
+  );
+};
 
-// const ContactBlock = () => (
-//   <section className="contact" id="contact">
-//     <div className="row">
-//       <div className="book">
-//         <div className="book__form">
-//           <form action="#" className="form">
-//             <div className="u-margin-bottom-medium">
-//               <h3 className="heading-secondary">Get in touch</h3>
+// class ContactBlock extends React.Component {
+//   state = {
+//     value: null,
+//     disabled: true
+//   };
+
+//   componentDidMount() {}
+
+//   handleChange = value => {
+//     console.log('Captcha value:', value);
+//     this.setState({ value, disabled: false });
+//   };
+
+//   handleExpired = () => {
+//     this.setState({ value: null, disabled: true });
+//   };
+
+//   handleSubmit = event => {
+//     event.preventDefault();
+//     console.log('Recaptcha', this.state.value);
+//   };
+
+//   render() {
+//     return (
+//       <section className="contact" id="contact">
+//         <div className="row">
+//           <div className="book">
+//             <div className="book__form">
+//               <form action="#" className="form" onSubmit={this.handleSubmit}>
+//                 <div className="u-margin-bottom-medium">
+//                   <h3 className="heading-secondary">Get in touch</h3>
+//                 </div>
+
+//                 <Input type="text" id="name" name="name" label="Full Name" required />
+
+//                 <Input type="email" id="email" name="email" label="Email Address" required />
+
+//                 <TextArea id="message" name="message" label="Message" required />
+
+//                 <ReCaptcha
+//                   sitekey="6Lfk3oUUAAAAAOxRML-Tcg5Y79Nyeeidj6OJ3Ha7"
+//                   name="recaptcha"
+//                   onExpired={this.handleExpired}
+//                   onChange={this.handleChange}
+//                   ref={this._reCaptchaRef}
+//                 />
+//                 <p>{this.state.recaptcha}</p>
+
+//                 <div type="submit" className="btn-group u-margin-top-medium">
+//                   <GreenButton disabled={this.state.disabled}>Send message &rarr;</GreenButton>
+//                 </div>
+//               </form>
 //             </div>
-
-//             <Input type="text" id="name" label="Full Name" required />
-
-//             <Input type="email" id="email" label="Email Address" required />
-
-//             <TextArea id="message" label="Message" required />
-
-//             <div className="btn-group u-margin-top-medium">
-//               <GreenButton>Send message &rarr;</GreenButton>
-//             </div>
-//           </form>
+//           </div>
 //         </div>
-//       </div>
-//     </div>
-//   </section>
-// );
+//       </section>
+//     );
+//   }
+// }
 
 export default ContactBlock;

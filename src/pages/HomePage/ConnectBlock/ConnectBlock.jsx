@@ -111,12 +111,12 @@ const ConnectBlock = () => (
           </RotatingCard>
         </div>
       </div>
-
+      {/* 
       <div className="u-center-text u-margin-top-large">
         <Link to="/connect">
           <GreenButton>More ways to connect</GreenButton>
         </Link>
-      </div>
+      </div> */}
     </section>
 
     <ModalSplit id={'alpha'} title="Alpha Course">

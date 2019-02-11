@@ -21,9 +21,26 @@ const ContactBlock = () => {
     setDisabled(true);
   };
 
-  const handleSubmit = event => {
+  const handleSubmit = async event => {
     event.preventDefault();
     console.log('Recaptcha', recaptcha);
+
+    const data = {
+      email: 'philip.hagger@gmail.com',
+      name: 'Phil Hagger',
+      message: 'This is a test message'
+    };
+
+    const response = await fetch('https://theoasis.church/email.php', {
+      method: 'POST',
+      mode: 'no-cors',
+      body: 'email=philip.hagger@gmail.com&name=Phil Hagger&message=This is a test message'
+    });
+
+    if (response.ok) {
+      const email = await response.json();
+      console.log(email);
+    }
   };
 
   return (

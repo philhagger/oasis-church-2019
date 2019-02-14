@@ -15,8 +15,16 @@ $gutter-horizontal: 6rem;
     }
   }
 
+  @include respond(tablet-landscape) {
+    max-width: 95rem;
+  }
+
   @include respond(tablet) {
     max-width: 75rem;
+    padding: 0 3rem;
+  }
+  @include respond(phone) {
+    max-width: 70rem;
     padding: 0 3rem;
   }
 

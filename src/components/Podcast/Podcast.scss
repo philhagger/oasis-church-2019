@@ -10,6 +10,15 @@
   padding-left: 9rem;
   font-size: $default-font-size;
   transform: skewX(-12deg);
+
+  @include respond(tablet) {
+    width: 100%;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0);
+  }
+
   & > * {
     transform: skewX(12deg);
   }
@@ -22,6 +31,10 @@
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-2rem) skewX(12deg);
     position: relative;
+
+    @include respond(phone) {
+      transform: translateX(-4rem) skewX(0);
+    }
   }
 
   &__image {
@@ -45,6 +58,10 @@
   &__text {
     transform: skewX(12deg);
     min-height: 10rem;
+
+    @include respond(phone) {
+      transform: skewX(0);
+    }
   }
 
   &:hover &__caption {
@@ -60,6 +77,9 @@
   &__audio {
     margin-left: 15rem;
     margin-top: 2rem;
+    @include respond(phone) {
+      transform: skewX(0);
+    }
   }
 
   .audio {

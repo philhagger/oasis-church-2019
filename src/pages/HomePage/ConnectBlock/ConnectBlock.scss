@@ -172,4 +172,23 @@
     font-size: 6rem;
     font-weight: 100;
   }
+
+  @include respond(tablet) {
+    height: 28rem;
+
+    &__cta {
+      position: relative;
+      width: 100%;
+    }
+
+    &__price-box {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    &__price-value {
+      font-size: 5rem;
+      font-weight: 100;
+    }
+  }
 }

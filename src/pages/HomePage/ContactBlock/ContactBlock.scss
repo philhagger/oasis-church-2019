@@ -36,8 +36,8 @@
   @include respond(tablet) {
     background-image: linear-gradient(
         105deg,
-        rgba($white, 0.9) 0%,
-        rgba($white, 0.9) 70%,
+        rgba($white, 0.7) 0%,
+        rgba($white, 0.7) 70%,
         transparent 70%
       ),
       url(./worship-sm.jpg);
@@ -53,8 +53,8 @@
   @include respond(phone) {
     background-image: linear-gradient(
         to right,
-        rgba($white, 0.9),
-        rgba($white, 0.9)
+        rgba($white, 0.7),
+        rgba($white, 0.7)
       ),
       url(./worship-sm.jpg);
     background-size: cover;
@@ -62,7 +62,7 @@
 
     &__form {
       width: 100%;
-      padding: 6rem;
+      padding: 4rem;
     }
   }
 }

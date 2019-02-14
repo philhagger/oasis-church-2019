@@ -1,7 +1,8 @@
 @import '../../../App.scss';
 
 .alpha {
-  font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic,
+    AppleGothic, sans-serif;
 
   &__heading {
     font-size: 4.8rem;
@@ -21,7 +22,13 @@
   padding: 25rem 0 25rem 0;
   margin-top: -15rem;
   position: relative;
-  clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 12vh, 100% 0, 100% 100%, 0 100%);
+
+  @include respond(phone) {
+    margin-top: -25rem;
+    clip-path: polygon(0 12vh, 100% 5vh, 100% 100%, 0 100%);
+    padding: 20rem 0 20rem 0;
+  }
 }
 
 .card-front {
@@ -37,17 +44,32 @@
     border-top-right-radius: 3px;
 
     &--1 {
-      background-image: linear-gradient(to right bottom, $alpha-red, $alpha-red-dark), url(./img/alpha-promo-sm.jpg);
+      background-image: linear-gradient(
+          to right bottom,
+          $alpha-red,
+          $alpha-red-dark
+        ),
+        url(./img/alpha-promo-sm.jpg);
       background-position: left top;
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, $tertiary-light, $tertiary-dark), url(./img/school-sm.jpg);
+      background-image: linear-gradient(
+          to right bottom,
+          $tertiary-light,
+          $tertiary-dark
+        ),
+        url(./img/school-sm.jpg);
       background-position: center center;
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, $yellow-light, $yellow-dark), url(./img/little-stars-sm.jpg);
+      background-image: linear-gradient(
+          to right bottom,
+          $yellow-light,
+          $yellow-dark
+        ),
+        url(./img/little-stars-sm.jpg);
       background-position: left top;
     }
   }
@@ -70,15 +92,27 @@
       box-decoration-break: clone;
 
       &--1 {
-        background-image: linear-gradient(to right bottom, rgba($alpha-red, 0.85), rgba($secondary-dark, 0.85));
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($alpha-red, 0.85),
+          rgba($secondary-dark, 0.85)
+        );
       }
 
       &--2 {
-        background-image: linear-gradient(to right bottom, rgba($tertiary-light, 0.85), rgba($tertiary-dark, 0.85));
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($tertiary-light, 0.85),
+          rgba($tertiary-dark, 0.85)
+        );
       }
 
       &--3 {
-        background-image: linear-gradient(to right bottom, rgba($yellow-light, 0.85), rgba($yellow-dark, 0.85));
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($yellow-light, 0.85),
+          rgba($yellow-dark, 0.85)
+        );
       }
     }
   }
@@ -109,7 +143,11 @@
     background: linear-gradient(to right bottom, $alpha-red, $alpha-red-dark);
   }
   &--2 {
-    background: linear-gradient(to right bottom, $tertiary-light, $tertiary-dark);
+    background: linear-gradient(
+      to right bottom,
+      $tertiary-light,
+      $tertiary-dark
+    );
   }
   &--3 {
     background: linear-gradient(to right bottom, $yellow-light, $yellow-dark);

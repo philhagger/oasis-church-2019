@@ -2,13 +2,21 @@
 
 .footer {
   background-color: $dark-grey;
-  padding: 10rem;
+  padding: 10rem 0;
   font-size: 1.4rem;
   color: $light-grey-1;
+
+  @include respond(tablet) {
+    padding: 8rem 0;
+  }
 
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
+
+    @include respond(tablet) {
+      margin-bottom: 6rem;
+    }
   }
 
   &__logo {
@@ -21,6 +29,11 @@
     padding-top: 2rem;
     display: inline-block;
     width: 80%;
+
+    @include respond(tablet) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -60,6 +73,12 @@
     width: 80%;
     float: right;
     text-align: right;
+
+    @include respond(tablet) {
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
   }
 }
 

@@ -18,7 +18,17 @@
 
 html {
   //font-size: 10px; // this is bad practice to set the font-size in px as it overrides browser accessibility
-  font-size: 62.5%; //default browser font-size is 16px
+  font-size: 62.5%; //default browser font-size is 16px so 1rem = 10px/16px = 62.5%
+
+  @include respond(tablet-landscape) {
+    font-size: 56.25%; //1rem = 9px, 9/16 = 56.25%
+  }
+  @include respond(tablet) {
+    font-size: 50%; //1rem = 8px, 8/16 = 50%
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12px, 12/16 = 75%
+  }
 }
 
 body {
@@ -27,5 +37,9 @@ body {
   line-height: 1.7;
   color: $grey;
   box-sizing: border-box; //includes padding and border in total height/width
-  // padding: 3rem;
+  padding: 3rem;
+
+  @include respond(tablet) {
+    padding: 0;
+  }
 }

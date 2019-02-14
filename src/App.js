@@ -24,9 +24,9 @@ class App extends Component {
         <React.Fragment>
           <NavMenu />
           <Switch>
-            <Route path="/" exact={true} component={HomePage} />
-            <Route path="/connect" component={ConnectPage} />
-            <Route path="/podcasts" component={PodcastsPage} />
+            <Route path='/' exact={true} component={HomePage} />
+            <Route path='/connect' component={ConnectPage} />
+            <Route path='/podcasts' component={PodcastsPage} />
             <Route component={NotFoundPage} />
           </Switch>
           <Footer />

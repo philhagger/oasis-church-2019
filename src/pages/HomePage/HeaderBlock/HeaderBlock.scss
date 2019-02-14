@@ -4,13 +4,22 @@
   height: 100vh; //vh = viewport height 0-100
   // height: 95vh; //vh = viewport height 0-100
   // background-image: linear-gradient(to right bottom, rgba($oasis-blue, 0.8), rgba($oasis-green, 0.7)), url('../../../img/hereford/Herefordshire-1.JPG');
-  background-image: linear-gradient(to right bottom, rgba($oasis-blue, 0.8), rgba($oasis-green, 0.7)), url('./header.jpg');
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($oasis-blue, 0.8),
+      rgba($oasis-green, 0.7)
+    ),
+    url('./header.jpg');
   background-size: cover;
   background-position: bottom;
   // polygon(top left, top right, bottom right, bottom left)
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   position: relative;
+
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+  }
 }
 
 .header__logo-box {
@@ -28,25 +37,8 @@
   @include align-center;
 }
 
-// .heading-primary {
-//   backface-visibility: hidden; //apparently this fixes an animation shake
-//   color: $white;
-//   margin-bottom: 6rem;
-//   text-transform: uppercase;
-//   white-space: nowrap;
-// }
-
 .heading-primary--main {
   animation: moveInLeft 1.5s ease-out;
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3rem;
-  // animation-name: moveInLeft;
-  // animation-duration: 1s;
-  // animation-timing-function: ease-out;
-  // animation-delay: 3s;
-  // animation-iteration-count: 3;
 }
 
 .heading-primary--sub {
@@ -55,6 +47,10 @@
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 2.8rem;
+
+  @include respond(phone) {
+    letter-spacing: 2rem;
+  }
 }
 
 .btn--animated {

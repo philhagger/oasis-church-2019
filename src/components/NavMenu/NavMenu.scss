@@ -17,6 +17,16 @@
     box-shadow: 0 1rem 3rem rgba($black, 0.1);
     text-align: center;
     cursor: pointer;
+
+    @include respond(tablet) {
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__background {
@@ -29,6 +39,16 @@
     background-image: radial-gradient($primary-light, $primary-dark);
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+
+    @include respond(tablet) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+
+    @include respond(phone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
 
   &__nav {
@@ -64,7 +84,12 @@
       color: $white;
       text-decoration: none;
       text-transform: uppercase;
-      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $white 50%);
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $white 50%
+      );
       background-size: 230%;
       transition: all 0.4s;
 
@@ -142,6 +167,8 @@
 
   &__checkbox:checked + &__button &__icon::after {
     top: 0;
-    transform: rotate(-135deg); //originally 45deg but 135 rotates 180 - 45 - looks better
+    transform: rotate(
+      -135deg
+    ); //originally 45deg but 135 rotates 180 - 45 - looks better
   }
 }

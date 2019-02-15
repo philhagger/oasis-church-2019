@@ -2,11 +2,14 @@ import React from 'react';
 import scrollToElement from 'scroll-to-element';
 
 import './InfoBlock.scss';
-import ImageComposition from '../../../components/ImageComposition/ImageComposition';
+// import ImageComposition from '../../../components/ImageComposition/ImageComposition';
 
 import img1 from './img1.jpg';
 import img2 from './img2.jpg';
 import img3 from './img3.jpg';
+import img1Large from './img-1-lg.jpg';
+import img2Large from './img-2-lg.jpg';
+import img3Large from './img-3-lg.jpg';
 
 const InfoBlock = () => (
   <section className='section-about' id='info'>
@@ -47,7 +50,28 @@ const InfoBlock = () => (
         </div>
       </div>
       <div className={'col-1-of-2 composition'}>
-        <ImageComposition img1={img1} img2={img2} img3={img3} />
+        <img
+          src={img1}
+          srcSet={`${img1} 300w, ${img1Large} 1000w`}
+          sizes='(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px'
+          className='composition__photo composition__photo--p1'
+          alt='img1'
+        />
+        <img
+          src={img2}
+          srcSet={`${img2} 300w, ${img2Large} 1000w`}
+          sizes='(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px'
+          className='composition__photo composition__photo--p2'
+          alt='img2'
+        />
+        <img
+          src={img3}
+          srcSet={`${img3} 300w, ${img3Large} 1000w`}
+          sizes='(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px'
+          className='composition__photo composition__photo--p3'
+          alt='img3'
+        />
+        {/* <ImageComposition img1={img1} img2={img2} img3={img3} /> */}
       </div>
     </div>
   </section>

@@ -23,31 +23,22 @@ const PodcastBlock = () => {
   };
 
   return (
-    <section className="stories-block" id="podcasts">
+    <section className='stories-block' id='podcasts'>
       <BackgroundVideo videoMp4={herefordVideo} />
-      <div className="u-center-text u-margin-bottom-large">
-        <h2 className="heading-secondary">Our latest messages</h2>
+      <div className='u-center-text u-margin-bottom-large'>
+        <h2 className='heading-secondary'>Our latest messages</h2>
       </div>
 
       {podcasts.slice(0, 2).map(podcast => (
-        <div className="row" key={podcast.id}>
+        <div className='row' key={podcast.id}>
           <Podcast podcast={podcast}>{podcast.description}</Podcast>
         </div>
       ))}
 
-      {/* {podcasts.slice(0, 2).map(({ url, id, description, title, speaker }) => (
-        <div className="row" key={id}>
-          <Podcast url={url} heading={title} person={{ name: speaker.name, img: speaker.imageURL }}>
-            {description}
-          </Podcast>
-        </div>
-      ))} */}
-
-      <div className="u-center-text">
-        <Link to="/podcasts" className="btn-text">
+      <div className='u-center-text'>
+        <Link to='/podcasts' className='btn-text'>
           Listen to more message &rarr;
         </Link>
-        {/* <div className="btn-text">Listen to more messages &rarr;</div> */}
       </div>
     </section>
   );

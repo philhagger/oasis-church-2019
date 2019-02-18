@@ -43,3 +43,8 @@ body {
     padding: 0;
   }
 }
+
+::selection {
+  background-color: $primary-light;
+  color: $white;
+}

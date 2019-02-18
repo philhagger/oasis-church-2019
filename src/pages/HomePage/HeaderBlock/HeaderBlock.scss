@@ -17,6 +17,15 @@
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   position: relative;
 
+  @media (min-resolution: 192dpi) and (min-width: 637.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($oasis-blue, 0.8),
+        rgba($oasis-green, 0.7)
+      ),
+      url('./Herefordshire-1.JPG');
+  }
+
   @include respond(phone) {
     clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
   }

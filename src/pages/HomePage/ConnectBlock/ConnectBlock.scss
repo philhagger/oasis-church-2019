@@ -35,8 +35,6 @@
   &__picture {
     background-size: cover;
     height: 23rem;
-    // background-blend-mode: screen;
-    background-blend-mode: soft-light;
     overflow: hidden;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -46,8 +44,8 @@
     &--1 {
       background-image: linear-gradient(
           to right bottom,
-          $alpha-red,
-          $alpha-red-dark
+          rgba($alpha-red, 0.4),
+          rgba($alpha-red-dark, 0.4)
         ),
         url(./img/alpha-promo-sm.jpg);
       background-position: left top;
@@ -56,8 +54,8 @@
     &--2 {
       background-image: linear-gradient(
           to right bottom,
-          $tertiary-light,
-          $tertiary-dark
+          rgba($tertiary-light, 0.4),
+          rgba($tertiary-dark, 0.4)
         ),
         url(./img/school-sm.jpg);
       background-position: center center;
@@ -66,11 +64,45 @@
     &--3 {
       background-image: linear-gradient(
           to right bottom,
-          $yellow-light,
-          $yellow-dark
+          rgba($yellow-light, 0.4),
+          rgba($yellow-dark, 0.4)
         ),
         url(./img/little-stars-sm.jpg);
       background-position: left top;
+    }
+
+    @supports (background-blend-mode: soft-light) {
+      background-blend-mode: soft-light;
+
+      &--1 {
+        background-image: linear-gradient(
+            to right bottom,
+            $alpha-red,
+            $alpha-red-dark
+          ),
+          url(./img/alpha-promo-sm.jpg);
+        background-position: left top;
+      }
+
+      &--2 {
+        background-image: linear-gradient(
+            to right bottom,
+            $tertiary-light,
+            $tertiary-dark
+          ),
+          url(./img/school-sm.jpg);
+        background-position: center center;
+      }
+
+      &--3 {
+        background-image: linear-gradient(
+            to right bottom,
+            $yellow-light,
+            $yellow-dark
+          ),
+          url(./img/little-stars-sm.jpg);
+        background-position: left top;
+      }
     }
   }
 

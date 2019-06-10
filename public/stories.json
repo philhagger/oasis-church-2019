@@ -1,9 +1,30 @@
 {
   "stories": [
     {
+      "title": "Emmanuel Kapofu",
+      "series": "",
+      "speaker": { "name": "Emmanuel Kapofu", "imageURL": "emmanuel.jpg" },
+      "date": "2019-02-10",
+      "description": "Pastor Emmanuel from International Life Centre in Wolverhampton shares with us.",
+      "url": "2019.02.10 Emmanuel Kapofu.m4a",
+      "id": 4
+    },
+    {
+      "title": "Kingdom Living - Part 4",
+      "series": "Kingdom",
+      "speaker": { "name": "Phil Arnold", "imageURL": "phil-arnold-sm.jpg" },
+      "date": "2019-02-17",
+      "description": "‘The Law and the Prophets were proclaimed until John. Since that time, the good news of the kingdom of God is being preached, and everyone is forcing their way into it. Luke 16:16",
+      "url": "2019.02.17 Phil Arnold Kingdom 4.m4a",
+      "id": 4
+    },
+    {
       "title": "Followers of Jesus",
       "series": "",
-      "speaker": { "name": "Graham Phillips", "imageURL": "graham-phillips-2.jpg" },
+      "speaker": {
+        "name": "Graham Phillips",
+        "imageURL": "graham-phillips-2.jpg"
+      },
       "date": "2018-11-18",
       "description": "Graham Phillips from Life Spring Wolverhampton visits us, bringing a message about being followers of Jesus.",
       "url": "2018.11.18-Graham_Phillips.m4a",
